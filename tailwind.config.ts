@@ -32,6 +32,9 @@ const config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -74,6 +77,13 @@ const config = {
       },
       backgroundImage: {
         hero: 'url(/images/hero/hero-bg.png)',
+        hero_shape: 'url(/images/hero/shape-1.svg)',
+        hero_shape2_light: 'url(/images/hero/shape-2-light.svg)',
+        hero_shape2_dark: 'url(/images/hero/shape-2-dark.svg)',
+        about_shape_light: 'url(/images/about/shape-light.svg)',
+        about_shape_dark: 'url(/images/about/shape-dark.svg)',
+        dots_light: 'url(/images/dots-light.svg)',
+        dots_dark: 'url(/images/dots-dark.svg)',
       }
     },
   },

@@ -6,13 +6,13 @@ import {motion} from 'framer-motion';
 
 const links = [
     {
-        path: '/', name: "home"
+        path: '/', name: "Trang chủ"
     },
     {
-        path: '/projects', name: "my projects"
+        path: '/projects', name: "dự án"
     },
     {
-        path: '/contact', name: "contact"
+        path: '/contact', name: "liên hệ"
     },
 ]
 

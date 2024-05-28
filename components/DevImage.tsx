@@ -1,8 +1,14 @@
 import React from 'react';
+import Image from 'next/image'
 
-function DevImage() {
+function DevImage({containerStyles, imgSrc} : {
+    containerStyles : string,
+    imgSrc : string
+}) {
     return (
-        <div>dev image</div>
+        <div className={`${containerStyles}`}>
+            <Image src={imgSrc} fill priority alt={''} />
+        </div>
     );
 }
 

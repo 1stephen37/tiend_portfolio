@@ -1,8 +1,36 @@
-import React from 'react';
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+    SheetClose
+} from '@/components/ui/sheet';
+import {AlignJustify} from 'lucide-react'
+import Navbar from './Navbar'
+import Logo from './Logo'
+import Socials from "@/components/Socials";
 
 function MobileNavbar() {
     return (
-        <div>mobile navbar</div>
+        <div className={'relative'}>
+            <Sheet>
+                <SheetTrigger asChild>
+                    <AlignJustify className={'cursor-pointer'}/>
+                </SheetTrigger>
+                <SheetContent>
+                    <div className="flex flex-col items-center justify-between h-full py-8">
+                        <div className="flex flex-col items-center gap-y-32">
+                            <Logo/>
+                            <Navbar containerStyle={'flex flex-col items-center gap-y-6 '} underlineStyles={''}
+                                    linkStyles={'text-2xl'}/>
+                        </div>
+                        <Socials containerStyles={'flex gap-x-4 '} iconsStyle={'text-2xl'}/>
+                    </div>
+                </SheetContent>
+            </Sheet>
+        </div>
     );
 }
 
